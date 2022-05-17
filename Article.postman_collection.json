@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "7f37a0c7-36bb-4347-aeb2-f1608fcac66f",
+		"name": "Article",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET ALL ARTICLE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/article",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"article"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ARTICLE WITH LIMIT AND OFFSET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/article/3/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"article",
+						"3",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD ARTICLE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"title\": \"Elegi Arsenal: Gagal Lolos Ke Liga Champions Rasa Degradasi\",\n            \"content\": \"Mungkin, Arsenal menjadi tim yang paling tersakiti saat ini ketimbang mereka yang harus terdegradasi ke Championship. Arsenal mendarat di markas Newcastle United dengan satu misi yang hukumnya wajib ditunaikan: menang. Hal itu demi memuluskan takdir The Gunners untuk tampil di Liga Champions musim depan. Namun, tampaknya manajer Mikel Arteta sulit berjodoh dengan kompetisi kasta teratas Eropa itu alias masih perlu berlapang dada untuk kembali merasakan tampil di liga malam Jumat.\",\n            \"category\": \"sport\",\n            \"status\": \"Published\"\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/article",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"article"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE ARTICLE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"title\": \"Elegi Arsenal: Gagal Lolos Ke Liga Champions Rasa Degradasion\",\n            \"content\": \"Mungkin, Arsenal menjadi tim yang paling tersakiti saat ini ketimbang mereka yang harus terdegradasi ke Championship. Arsenal mendarat di markas Newcastle United dengan satu misi yang hukumnya wajib ditunaikan: menang. Hal itu demi memuluskan takdir The Gunners untuk tampil di Liga Champions musim depan. Namun, tampaknya manajer Mikel Arteta sulit berjodoh dengan kompetisi kasta teratas Eropa itu alias masih perlu berlapang dada untuk kembali merasakan tampil di liga malam Jumat.\",\n            \"category\": \"sport\",\n            \"status\": \"Published\"\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/article/15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"article",
+						"15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/article/15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"article",
+						"15"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
