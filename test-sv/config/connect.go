@@ -27,7 +27,7 @@ func Connect() *gorm.DB {
 			Colorful:                  false,       // Disable color
 		},
 	)
-	dsn := "root:root@tcp(localhost:3307)/article?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := "root:root@tcp(8.215.76.20:3306)/article?charset=utf8mb4&parseTime=True&loc=Local"
 	DB, err = gorm.Open(mysql.Open(dsn), &gorm.Config{Logger: newLogger})
 	helpers.PanicIfError(err)
 

@@ -17,5 +17,5 @@ func main() {
 	articleUsecase := article_usecase.NewArticleUsecase(articleRepository, validate)
 	articleDelivery := article_delivery.NewArticleDelivery(articleUsecase)
 	router := routes.NewRouter(articleDelivery)
-	router.Run("localhost:8080")
+	router.Run(":8080")
 }
