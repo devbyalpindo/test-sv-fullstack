@@ -28,7 +28,7 @@ var (
 )
 
 func setupTestDB() *gorm.DB {
-	dsn := "root:root@tcp(localhost:3307)/article_test?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := "root:root@tcp(mariadb:3306)/article_test?charset=utf8mb4&parseTime=True&loc=Local"
 	DB, err = gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	helpers.PanicIfError(err)
 	DB.AutoMigrate(&entity.Article{})
